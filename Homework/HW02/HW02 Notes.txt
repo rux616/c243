@@ -1,0 +1,32 @@
+List of functions to write:
+
+X-ListIterator::min()
+-ListIterator::moveForward(int steps)
+
+X-List::operator==(const List &data)
+X-List::insertBack(int number=0)
+X-List::isOrdered()
+X-List::countNegative()
+X-List::removeFront()
+X-List::insertAfter(ListIterator iter, int number)
+X-List::sum()
+X-List::nodeAtPosition(int location)
+X-List::selectionSort()
+
+(+)
+X-List::positionAtNode(ListIterator target)
+X-interface:retrieveAction(List &list)
+X-interface:locateAction(List &list)
+X-interface:insertSpecifiedAction(List &list)
+X-interface:minimumAction(List &list)
+X-interface:inputNumber()
+
+
+Modify: interface
+add option 16
+add option 17
+replace bubble sort with selection sort
+add option to locate a number in first list
+(optional)add test for homework functions that are not tested, after 17
+
+

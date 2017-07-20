@@ -1,0 +1,15 @@
+D
+5
+A
+B
+C
+D
+E
+A, B
+A, D
+A, E
+B, A
+B, C
+B, D
+C, D
+C, E

@@ -1,0 +1,148 @@
+Name:			Dan Cassidy
+Date:			2014-08-29
+Homework #:		
+Source File:	.txt
+Class:			C-243 TuTh 1700
+
+
+
+Function void main(void)
+[Inputs]
+
+
+[Outputs]
+
+
+[Equations]
+
+
+[Limits]
+
+
+[Algorithm]
+
+
+
+Function void MyArray::input()
+[Inputs]
+MyArray *this
+
+[Outputs]
+None
+
+[Equations]
+
+
+[Limits]
+
+
+[Algorithm]
+
+
+
+
+Function void MyArray::randomize(int limit = 100, int theSize = 0)
+[Inputs]
+MyArray *this
+int limit (default value of 100)
+int theSize (default value of 0)
+
+[Outputs]
+MyArray *this
+
+[Equations]
+
+
+[Limits]
+
+
+[Algorithm]
+if (theSize)
+	resize(theSize)
+end if
+
+for (set i to 0, while i lessthan size, preincrement i)
+	set array[i] to rand() % (limit + 1)
+end for
+
+
+
+Function bool MyArray::operator==(MyArray &data) const
+[Inputs]
+MyArray *this
+MyArray &data
+
+[Outputs]
+RVDT bool
+
+[Equations]
+
+
+[Limits]
+
+
+[Algorithm]
+declare bool arraysMatch and initialize to TRUE
+
+if (size notequalto data.size)
+	set arraysMatch to FALSE
+end if
+
+for (set i to 0, while i lessthan size AND arraysMatch, preincrement i)
+	if (array[i] notequalto data.array[i])
+		set arraysMatch to FALSE
+	end if
+end for
+
+return arraysMatch
+
+
+
+Function bool MyArray::operator!=(MyArray &data) const
+[Inputs]
+MyArray *this
+MyArray &data
+
+[Outputs]
+RVDT bool
+
+[Equations]
+
+
+[Limits]
+
+
+[Algorithm]
+return NOT(*this equalto &data)
+
+
+
+Function int MyArray::hamming(MyArray &data)
+[Inputs]
+MyArray *this
+MyArray &data
+
+[Outputs]
+RVDT int
+
+[Equations]
+
+
+[Limits]
+
+
+[Algorithm]
+declare int hammingDistance and initialize to 0
+
+declare int smallerArraySize and initialize to (size < data.size ? size : data.size)
+declare int largerArraySize and initialize to (size > data.size ? size : data.size)
+
+for (set i to 0, while i lessthan smallerArraySize, preincrement i)
+	if (array[i] notequalto data.array[i])
+		preincrement hammingDistance
+	end if
+end for
+
+set hammingDistance to hammingDistance + (largerArraySize - smallerArraySize)
+
+return hammingDistance

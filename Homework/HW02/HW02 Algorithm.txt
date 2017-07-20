@@ -1,0 +1,5 @@
+List::operator==(const List &data)
+
+-if head is the same, then they are ==
+-if size is not the same, then they are !=
+-if 

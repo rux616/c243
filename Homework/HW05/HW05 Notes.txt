@@ -1,0 +1,8 @@
+X	HashTable::find
+x	HashTable::hashing
+X	HashTable::insert
+X	HashTable::access
+X	HashTable::remove
+X	HashTable::statistics
+X	main::indexWords
+X	main::increment

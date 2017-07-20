@@ -1,0 +1,9 @@
+Functions to create in bin-trees-A.cc
+
+
+	countOfZeroValues
+	destroyABinaryTree
+x	height
+x	incrementEachDatum
+x	reverse
+x	sumOfNegativeData
